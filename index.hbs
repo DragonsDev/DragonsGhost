@@ -1,0 +1,41 @@
+{{!< default}}
+
+    <div id="wrap">
+    
+    <div id="header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+      <div class="container">
+        <div class="row">
+        	<div class="col-md-7">
+	        	<h1><a href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a></h1>
+	        	<p class="desc">{{@blog.description}}</p>
+        	</div>
+        	<div class="col-md-5 logo">
+	       {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img class="pull-right" src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+        	</div>
+        </div>
+      </div>
+    </div>
+    <div class="brands"></div>
+
+      <div class="container">
+      
+      {{#foreach posts}}
+      
+        <div class="page-header">
+        <span class="pull-right post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
+	    <h2><a href="{{url}}">{{{title}}}</a></h2>
+        </div>
+        
+        <div class="xcontent">
+        <p class="lead">{{excerpt}}&hellip;</p>
+        </div>
+        
+      {{/foreach}}
+        
+      </div>
+      
+      <div class="container">
+      {{pagination}}
+      </div>
+      
+    </div>

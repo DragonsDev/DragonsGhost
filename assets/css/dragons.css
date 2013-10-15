@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html,
+body {
+	height: 100%;
+    background: #fff;
+    color: #434950;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-weight:normal;
+    color:#3e4248;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+h1 a{
+	color: #fff;
+}
+
+
+h1 a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#header {
+    color:#fff;
+    background: #B20000;
+    height: 90px;
+}
+
+#header h1 {
+	font-size: 25px;
+	color: #fff;
+}
+
+.desc {
+	margin-top: -10px;
+}
+
+.logo img {
+	margin-top: 20px;
+	width: 175px;
+	max-width: 180px;
+}
+
+.brands {
+background: 
+#E4E2D6 url(/assets/img/colorsbg.png) no-repeat top left;
+height: 4px;
+}
+
+.post-meta {
+	margin-top: 30px;	
+}
+
+.xcontent {
+margin: 4rem auto;
+padding-bottom: 2rem;
+}
+
+.xcontent img{
+	width: 100%
+}
+
+.xjustify {
+	text-align: justify;
+}
+
+.pagination {
+text-align: center;
+}
+
+#footer {
+  height: 120px;
+  background-color: #F7FAFB;
+  color: #BBC7CC;
+  text-align: center;
+  border-top: #EBF2F6 1px solid;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.container .copyright {
+  margin: 20px 0;
+}
+
+.container .poweredby {
+  margin: 20px 0;
+  margin-top: -20px;	
+}
+
+
+/* Import the font file with the icons in it */
+@font-face {
+    font-family: 'icons';
+    src:url('../fonts/icons.eot');
+    src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icons.woff') format('woff'),
+        url('../fonts/icons.ttf') format('truetype'),
+        url('../fonts/icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+.icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+.icon-ghost {
+    font-family: 'icons';
+    speak: none;
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+/* Each icon is created by inserting the corret character into the 
+   content of the :before pseudo element. Like a boss. */
+.icon-ghost:before {
+    content: "\e000";
+}
+.icon-feed:before {
+    content: "\e001";
+}
+.icon-twitter:before {
+    content: "\e002";
+    font-size: 1.1em;
+}
+.icon-google-plus:before {
+    content: "\e003";
+}
+.icon-facebook:before {
+    content: "\e004";
+}
+
+
+
+
+
+
+

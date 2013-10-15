@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   {{! Document Settings }}
+    <meta charset="utf-8">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Styles'n'Scripts }}
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/dragons.css" rel="stylesheet">
+    
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{ghost_head}}
+        
+  </head>
+
+  <body>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <div id="footer">
+      <div class="container">
+        <section class="credit copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+        <section class="credit poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"> Ghost</a> | Theme by <a href="http://dragonsdev.com">DragonsDev</a></section>
+	 <a  class="subscribe" href="{{@blog.url}}/rss/"><img src="/assets/img/feed.png" /></a>
+      </div>
+    </div>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+
+  </body>
+</html>
